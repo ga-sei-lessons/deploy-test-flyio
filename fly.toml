@@ -41,5 +41,8 @@ processes = []
     restart_limit = 0
     timeout = "2s"
 
+[env]
+  NODE_ENV = 'production'
+
 [deploy]
-release_command = "sequelize db:migrate --env production | exit 1"
+release_command = "sequelize db:migrate --env production"
