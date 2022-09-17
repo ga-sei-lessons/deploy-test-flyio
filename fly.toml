@@ -42,4 +42,4 @@ processes = []
     timeout = "2s"
 
 [deploy]
-release_command = "sequelize db:migrate --env production | exit 1
+release_command = "sequelize db:migrate --env production | exit 1"
